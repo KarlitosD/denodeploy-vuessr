@@ -1,9 +1,9 @@
 import { renderToString } from "https://esm.sh/vue@3.2.41/server-renderer";
+import { bundle } from "https://deno.land/x/emit@0.9.0/mod.ts"
 import { createApp } from "./src/main.js";
 
 console.log("Hasta aca llegue")
 
-import { bundle } from "https://deno.land/x/emit@0.9.0/mod.ts"
 const { code } = await bundle("./client.js")
 
 // console.log({ code })
