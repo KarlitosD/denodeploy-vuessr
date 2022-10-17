@@ -6,6 +6,7 @@ console.log("Hasta aca llegue")
 
 const { code } = await bundle("./client.js")
 
+console.log("Hasta aca no se")
 // console.log({ code })
 
 export const renderApp = async () => {
